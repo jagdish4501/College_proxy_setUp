@@ -1,0 +1,56 @@
+`			              `**Proxy setup**
+
+**In linux ubuntu:**
+
+- sudo -H vi /etc/apt/apt.conf
+
+`  `write this script in vim editor
+
+Acquire::http::Proxy "http://edcguest:edcguest@172.31.100.25:3128/";
+
+Acquire::https::Proxy "http://edcguest:edcguest@172.31.100.28:3128/";
+
+Acquire::ftp::Proxy "ftp://edcguest:edcguest@172.31.100.25:3128/";
+
+**For NPM**
+
+npm config set proxy <http://edcguest:edcguest@172.31.100.25:3128>
+
+npm config set https-proxy <http://edcguest:edcguest@172.31.100.25:3128>
+
+`      `Removing Proxy: in NPM
+
+`               `npm config rm proxy
+
+`               `npm config rm https-proxy
+
+**for VS code:**
+
+`	`type :user setting 
+
+`				     `edit in setting.json
+
+`			               `add below comments
+
+`    `"http.proxy": "http://edcguest:edcguest@172.31.100.25:3128/",
+
+`    `"http.proxyAuthorization": null,
+
+`    `"http.proxyStrictSSL": true,
+
+`    `"typescript.tsdk": ""
+
+**FOR GIT BASH**
+
+git config --global http.proxy http://edcguest:edcguest@172.31.100.25:3128
+
+for unset.
+
+git config --global --unset http.proxy
+
+**For pip :**
+
+`		`pip install <package-name> --proxy  http://edcguest:edcguest@172.31.100.25:3128
+
+
+
