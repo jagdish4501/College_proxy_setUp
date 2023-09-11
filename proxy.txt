@@ -41,3 +41,54 @@
 
 
 
+cheating js 
+
+document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+};  
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+window.addEventListener("focus",
+function(){
+         console.log("user go outoff focuss")
+}
+)
+
+window.addEventListener("keydown",
+	function(){
+		consol.log("The key Code of pressed key is : "+event.keycode);
+	}
+)
+
+document.body.contentEditible=true
+
+
+event listener
+1. visibilitychange
+2. focus
+3.blur
+4.copy
+5.paste
+6.fullscreen
+7. dont paste code on editor 
+8.
+
+
+
