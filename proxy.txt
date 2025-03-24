@@ -6,6 +6,12 @@
 	Acquire::http::Proxy "http://edcguest:edcguest@172.31.100.25:3128/";
 	Acquire::https::Proxy "http://edcguest:edcguest@172.31.100.28:3128/";
 	Acquire::ftp::Proxy "ftp://edcguest:edcguest@172.31.100.25:3128/";
+
+--------------------------------------- for yum repo in rhel -----------------------------------------------------------
+in /etc/yum.conf  
+proxy=http://proxy_host:proxy_port
+proxy_username=proxy_username
+proxy_password=proxy_password
 	
 	
 
